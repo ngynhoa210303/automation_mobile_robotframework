@@ -3,7 +3,6 @@ Library     AppiumLibrary
 Library     RPA.JSON
 Library     ../../PyLibrary/custom_env.py
 Library     ../../PyLibrary/custom_keywords.py
-Library     ../../.venv/lib/site-packages/FlaUILibrary/__init__.py
 
 
 *** Variables ***
