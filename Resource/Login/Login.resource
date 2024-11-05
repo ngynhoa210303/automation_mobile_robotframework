@@ -7,50 +7,49 @@ Variables           Login_variables.py
 
 
 *** Variables ***
-${global_username}      
-${global_password}      
+${global_username}     
+${global_password}     
 
 
 *** Keywords ***
 Login With Username And Password
-    Wait Until Element Is Visible    xpath=${login_txt_username}    10
+    Wait Element And Fail If Not Found    ${login_txt_username}
     Input Text    xpath= ${login_txt_username}    ${global_username}
     Input Text    xpath= ${login_txt_password}    ${global_password}
-    Wait Until Element Is Visible    xpath=${login_btn_login}
+    Wait Element And Fail If Not Found    ${login_btn_login}
     Click Element    xpath=${login_btn_login}
-    Sleep    10
-    Wait Until Element Is Visible    xpath=${login_dashboard_screen}    5
+    Wait Element And Fail If Not Found    ${login_dashboard_screen}
+
 Login With Username Incorrect
     [Arguments]    ${username_incorrect}
-    Wait Until Element Is Visible    xpath=${login_txt_username}    10
+    Wait Element And Fail If Not Found    ${login_txt_username}
     Input Text    xpath= ${login_txt_username}    ${username_incorrect}
     Input Text    xpath= ${login_txt_password}    ${global_password}
-    Wait Until Element Is Visible    xpath=${login_btn_login}
+    Wait Element And Fail If Not Found    ${login_btn_login}
     Click Element    xpath=${login_btn_login}
-    Sleep    10
-    Wait Until Element Is Visible    xpath=${login_fail_error}    5
+    Wait Element And Fail If Not Found    ${login_fail_error}
+
 Login With Password Incorrect
     [Arguments]    ${password_incorrect}
-    Wait Until Element Is Visible    xpath=${login_txt_username}    10
+    Wait Element And Fail If Not Found    ${login_txt_username}
     Input Text    xpath= ${login_txt_username}    ${global_username}
     Input Text    xpath= ${login_txt_password}    ${password_incorrect}
-    Wait Until Element Is Visible    xpath=${login_btn_login}
+    Wait Element And Fail If Not Found    ${login_btn_login}
     Click Element    xpath=${login_btn_login}
-    Sleep    10
-    Wait Until Element Is Visible    xpath=${login_fail_error}    5
+    Wait Element And Fail If Not Found    ${login_fail_error}
+
 Login With Password Is Empty
     [Arguments]    ${password_incorrect}
-    Wait Until Element Is Visible    xpath=${login_txt_username}    10
+    Wait Element And Fail If Not Found    ${login_txt_username}
     Input Text    xpath= ${login_txt_username}    ${global_username}
-    Wait Until Element Is Visible    xpath=${login_btn_login}
+    Wait Element And Fail If Not Found    ${login_btn_login}
     Click Element    xpath=${login_btn_login}
-    Sleep    10
-    Wait Until Element Is Visible    xpath=${login_empty_error}    5
+    Wait Element And Fail If Not Found    ${login_empty_error}
+
 Login With Username Is Empty
     [Arguments]    ${password_incorrect}
-    Wait Until Element Is Visible    xpath=${login_txt_username}    10
+    Wait Element And Fail If Not Found    ${login_txt_username}
     Input Text    xpath= ${login_txt_password}    ${global_password}
-    Wait Until Element Is Visible    xpath=${login_btn_login}
+    Wait Element And Fail If Not Found    ${login_btn_login}
     Click Element    xpath=${login_btn_login}
-    Sleep    10
-    Wait Until Element Is Visible    xpath=${login_empty_error}    5
+    Wait Element And Fail If Not Found    ${login_empty_error}

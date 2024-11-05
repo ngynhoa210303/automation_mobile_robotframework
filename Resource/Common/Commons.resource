@@ -3,7 +3,6 @@ Library     AppiumLibrary
 Library     RPA.JSON
 Library     ../../PyLibrary/custom_env.py
 Library     ../../PyLibrary/custom_keywords.py
-Library     ../../.venv/lib/site-packages/FlaUILibrary/__init__.py
 
 
 *** Variables ***
@@ -14,7 +13,7 @@ ${ANDROID_APP_PACKAGE}          com.p0347_mobileapp
 ${ANDROID_APP_ACTIVITY}         com.p0347_mobileapp.MainActivity
 ${URL_APPLICATION}              http://127.0.0.1:4723
 ${ENFORCE_XPATH}                ${True}
-${test_json}                    ${EMPTY}
+${test_json}                  
 
 
 *** Keywords ***
@@ -26,10 +25,7 @@ FSI Sys - Suite Setup
     ...    appPackage=${ANDROID_APP_PACKAGE}
     ...    appActivity=${ANDROID_APP_ACTIVITY}
     ...    enforceXpath1=${ENFORCE_XPATH}
-
     ${project_path} =    Path To Project
-    Take Screenshots On Failure    ${True}
-    FlaUILibrary.Set Screenshot Directory    ${project_path}\\Screenshots
     ${json_data} =    Load JSON from file    ${project_path}\\env_testData.json
     Set Global Variable    ${test_json}    ${json_data}
     Get Username And Password From Json
@@ -44,13 +40,13 @@ Get Username And Password From Json
     Set Global Variable    ${global_password}    ${password_json}
 
 Wait Element And Fail If Not Found
-    [Arguments]    ${identifier}    ${retry_time}=60
+    [Arguments]    ${identifier}    ${timeout}=60
+    ${project_path} =    Path To Project
     ${status} =    Run Keyword And Return Status
-    ...    Wait Until Element Exist
+    ...    Wait Until Element Is Visible
     ...    xpath=${identifier}
-    ...    retries=${retry_time}
+    ...    timeout=${timeout}
     IF    ${status} == ${False}
+        Capture Page Screenshot    ${project_path}\\Screenshots\\ErrorReport_display_${TEST_NAME}.png
         Fail    ${identifier} not display or working
-    ELSE
-        Log To Console    ${identifier} displayed
     END
