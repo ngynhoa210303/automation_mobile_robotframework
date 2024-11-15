@@ -1,7 +1,14 @@
 {
-    "login-test": 
-        {
-            "user_name": "hoanguyen",
-            "password": "Hoa@123456"
-        }
+    "login-test": {
+        "user_name": "user22",
+        "password": "Fsi@123456",
+        "user_name_disble": "hoant20",
+        "password_disble": "Hoa@123456",
+        "user_name_admin": "bhtest2",
+        "password_admin": "Fsi@123456"
+    },
+    "forgot-password-test": {
+        "user_account_correct": "qahoass",
+        "user_account_incorrect": "5322134bhtest"
+    }
 }
