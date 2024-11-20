@@ -3,7 +3,6 @@ Library     AppiumLibrary
 Library     RPA.JSON
 Library     ../../PyLibrary/custom_env.py
 Library     ../../PyLibrary/custom_keywords.py
-Library     common_variable.py
 Library     DateTime
 Library     OperatingSystem
 Library     Process
@@ -24,8 +23,9 @@ ${FILE_MANAGER_ACTIVITY}        com.android.documentsui.files.FilesActivity
 ${FILE_MANAGER_ACTIVITY}        com.android.documentsui.files.FilesActivity
 ${ID_ENABLE}                    ${True}
 ${PERMISSiON}                   ${True}
-${results_save_dir}            
-${file_name} 
+${results_save_dir}             ${EMPTY}
+${file_name}                    ${EMPTY}
+
 
 *** Keywords ***
 FSI Sys - Suite Setup
@@ -80,8 +80,6 @@ Wait Element And Fail If Not Found
         Fail    ${identifier} not display or working
     END
 
-
-
 Click On Element
     [Arguments]    ${type}    ${identifier}    ${timeout}=10
     Wait Element And Fail If Not Found    ${type}    ${identifier}    ${timeout}
@@ -93,7 +91,7 @@ Fill Input Text
     Wait Element And Fail If Not Found    ${type}    ${identifier}
     ${location} =    Set Variable    ${type}=${identifier}
     ${attribute_id} =    Get Element Attribute    ${location}    resource-id
-    Log To Console    \nInput to ${attribute_id} now
+    # Log To Console    \nInput to ${attribute_id} now
     Input Text    ${location}    ${text}
 
 Create Test Record
@@ -106,17 +104,17 @@ Create Test Record
         Create New Folder    ${results_save_dir}
     END
     Set Global Variable    ${file_name}    ${TEST_NAME}-${current_date_time_global}
-    Start Screen Recording  
+    Start Screen Recording
+
 Remove Record If Test Passed
     IF    "${TEST_STATUS}" == "PASS"
         ${path} =    PathToProject
-        Log To Console    Sau Stop ${path}/${results_save_dir}/${file_name}
-        Remove File   ${path}${results_save_dir}\\${file_name}
+        Remove File    ${path}${results_save_dir}/${file_name}.mp4
     END
+
 End Record
     ${path} =    PathToProject
     Stop Screen Recording    ${path}/${results_save_dir}/${file_name}
-    Log To Console    ${TEST_STATUS}
     Remove Record If Test Passed
 
 Swipe Up
@@ -152,3 +150,34 @@ Swipe Down
     ${endY} =    Get Element Coordinates    ${bounds_value_end}    endY
     ${XValue} =    Evaluate    random.randint(${startX}, ${endX})
     Swipe    ${XValue}    ${endY}    ${XValue}    ${startY}
+
+Setup Language
+    [Arguments]    ${language}=//android.widget.TextView[@text="Tiếng Việt"]
+    Click On Element    id    account_text_ChangeLanguage
+    Click On Element    xpath    ${language}
+
+Get Value From Input Box
+    [Arguments]    ${type}    ${identifier}    ${attribute}
+    Wait Element And Fail If Not Found    ${type}    ${identifier}
+    ${location} =    Set Variable    ${type}=${identifier}
+    ${value} =    Get Element Attribute    ${location}    ${attribute}
+    RETURN    ${value}
+
+Capture Element Of Page
+    [Arguments]    ${bounds_value}    ${FULL_SCREENSHOT}    ${x_path}
+    Capture Page Screenshot    ${FULL_SCREENSHOT}
+    ${startX} =    Get Element Coordinates    ${bounds_value}    startX
+    ${startX_value} =    Evaluate    int('${startX}')
+    ${endX} =    Get Element Coordinates    ${bounds_value}    endX
+    ${endX_value} =    Evaluate    int('${endX}')
+    ${startY} =    Get Element Coordinates    ${bounds_value}    startY
+    ${startY_value} =    Evaluate    int('${startY}')
+    ${endY} =    Get Element Coordinates    ${bounds_value}    endY
+    ${endY_value} =    Evaluate    int('${endY}')
+    Crop Image
+    ...    ${FULL_SCREENSHOT}
+    ...    ${startX_value}
+    ...    ${startY_value}
+    ...    ${endX_value}
+    ...    ${endY_value}
+    ...    ${x_path}

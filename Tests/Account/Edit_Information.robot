@@ -8,10 +8,14 @@ Suite Teardown      FSI Sys - Suite Teardown
 *** Test Cases ***
 Upload image check
     [Tags]    medium    TC-11
-    [Setup]   Update Information - Test Setup
     Upload Avatar
-    [Teardown]    Remove Image - Test Teardown
-View Infor
+    [Teardown]     Remove Avatar - Test Teardown
+Update Infor With User Account
     [Tags]    medium    TC-12
     Login With Username And Password With User Account
-    View Information Of User
+    Click On Element    id    ${bottom_menubar_account}
+    Click On Element    id    ${account_btn_acc_information}
+   
+Update Infor With Admin Account
+    [Tags]    medium    TC-13
+    Update Information With Admin Role - Test Setup

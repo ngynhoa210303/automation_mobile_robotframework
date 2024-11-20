@@ -1,7 +1,14 @@
 {
-    "login-test": 
-        {
-            "user_name": "",
-            "password": ""
-        }
+    "login-test": {
+        "user_name": "",
+        "password": "",
+        "user_name_disble": "",
+        "password_disble": "",
+        "user_name_admin": "",
+        "password_admin": ""
+    },
+    "forgot-password-test": {
+        "user_account_correct": "",
+        "user_account_incorrect": ""
+    }
 }
