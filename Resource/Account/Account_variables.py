@@ -1,5 +1,7 @@
 ##Account in menu bar
 account_btn_acc_information='profile_text_AccountInfo'
+menu_btn_changeLanguage='account_text_ChangeLanguage'
+menu_btn_logout='account_text_Logout'
 
 ##Account information
 account_btn_edit='profile_btn_EditAccountInfo'
@@ -8,6 +10,8 @@ account_switch_2FA='profile_switch_TwoFactor'
 account_image_avatar='//android.widget.ImageView'
 # Choose image in download
 download_choose_image='//android.view.ViewGroup[@content-desc="Chọn Từ Thiết Bị"]'
+download_more_option='//android.widget.ImageView[@content-desc="More options"]'
+download_option_brower='//android.widget.TextView[@resource-id="com.google.android.providers.media.module:id/title" and @text="Browse…"]'
 download_show_root_btn='//android.widget.ImageButton[@content-desc="Show roots"]'
 download_btn_download='//android.widget.TextView[@resource-id="android:id/title" and @text="Downloads"]'
 download_crop_img='//android.widget.Button[@content-desc="Crop"]'
@@ -38,5 +42,7 @@ accountEdit_btn_save='editProfile_btn_Save'
 accountEdit_select_position='editProfile_input_Position'
 accountEdit_txt_department='editProfile_select_Department'
 
-error_success_1 = '//android.widget.TextView[@text="Thành công"]'
-error_success_2 = '//android.widget.TextView[@text="Lưu thông tin thành công!"]'
+error_username = 'editProfile_text_DisplayName'
+error_phone = 'editProfile_text_Phone'
+error_email = 'editProfile_text_Email'
+error_position = 'editProfile_text_Position'

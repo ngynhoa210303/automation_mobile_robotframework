@@ -1,6 +1,6 @@
 
 ## Forgot Password
-forgotPassword_btn_forgotPassword='//android.widget.TextView[@text="Quên Mật Khẩu ?"]'
+forgotPassword_btn_forgotPassword='login_btn_ForgotPassword'
 forgotPassword_tilte_forgot='forgotPsw_text_ForgotPassword'
 forgotPassword_btn_back='forgotPsw_btn_Back'
 forgotPassword_txt_accountName='forgotPsw_input_Username'
@@ -8,5 +8,33 @@ forgotPassword_btn_send='forgotPsw_btn_Send'
 forgotPassword_text_send_success='forgotPsw_text_NotificationSent'
 forgotPassword_btn_done='forgotPsw_btn_Done'
 forgotPassword_label_login='login_text_Login'
-forgotPassword_fail_error_1 = '//android.widget.TextView[@text="Đã Xảy Ra Lỗi"]'
-forgotPassword_fail_error_2 = '//android.widget.TextView[@text="Tài khoản không tồn tại. Vui lòng liên hệ với Quản trị viên!"]'
+
+## Change Password
+changePassword_btn_changePassword='profile_btn_ChangePassword'
+changePassword_txt_currentPassword='changePsw_input_CurrentPassword'
+changePassword_txt_newPassword='changePsw_input_NewPassword'
+changePassword_txt_confirmPassword='changePsw_input_ConfirmPassword'
+changePassword_btn_save='changePsw_btn_Save'
+changePassword_error_empty_currentpass='changePsw_text_CurrentPasswordError'
+changePassword_error_empty_newpass='changePsw_text_CurrentPasswordError'
+changePassword_error_empty_confirmpass='changePsw_text_ConfirmPassword'
+changePassword_error_condition_pass_1='changePsw_text_Validation_1'
+changePassword_error_condition_pass_2='changePsw_text_Validation_2'
+changePassword_error_condition_pass_3='changePsw_text_Validation_3'
+
+account_btn_acc_information='profile_text_AccountInfo'
+account_txt_account_name='profile_input_Username'
+account_txt_username='profile_input_DisplayName'
+account_txt_email='profile_input_Email'
+
+## 2FA
+tfa_modal_txt_enable2FA='tfaModal_text_EnableTwoFactorAuth'
+tfaModal_btn_continue='tfaModal_btn_Continue'
+tfa_radio_email='tfaModal_radio_Email'
+tfa_radio_phone='tfaModal_radio_Phone'
+tfa_txt_otp='tfaModal_input_Otp'
+tfa_btn_verify='tfaModal_btn_Verify'
+tfa_txt_coundown='app_text_Countdown'
+tfa_txt_emailInstruction='tfaModal_text_EmailInstruction'
+tfa_txt_otp_send_noti='tfaModal_text_OtpSentNotification'
+tfa_txt_error_invalidOtp='tfaModal_error_InvalidOtp'

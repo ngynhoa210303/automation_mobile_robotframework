@@ -1,5 +1,5 @@
 output/
-venv/
+.venv/
 temp/
 .rpa/
 .idea/
@@ -21,6 +21,7 @@ testrun/*
 *.html
 *.xml
 .env
-env_*_testData.json
+env_stag_testData.json
+env_dev_testData.json
 Screenshots/
 Results/

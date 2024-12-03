@@ -3,9 +3,10 @@ Library             AppiumLibrary
 Resource            ../../Resource/Auth/Auth.resource
 Resource            ../../Resource/Common/Commons.resource
 Suite Setup         FSI Sys - Suite Setup
-Suite Teardown      FSI Sys - Suite Teardown
 Test Setup          Create Test Record
 Test Teardown       End Record
+Suite Teardown      FSI Sys - Suite Teardown
+
 
 *** Test Cases ***
 Check Forgot Password Successfully

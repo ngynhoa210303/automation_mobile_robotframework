@@ -1,11 +1,12 @@
 *** Settings ***
-Library  AppiumLibrary
+Library           AppiumLibrary
 Resource          ../../Resource/Login/Login_Logout.resource
 Resource          ../../Resource/Common/Commons.resource
 Suite Setup         FSI Sys - Suite Setup
-Suite Teardown      FSI Sys - Suite Teardown
 Test Setup          Create Test Record
 Test Teardown       End Record
+Suite Teardown      FSI Sys - Suite Teardown
+
 *** Variables ***
 ${username_incorrect}    BHtest
 ${password_incorrect}   BHtest@1234

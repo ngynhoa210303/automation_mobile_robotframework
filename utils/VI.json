@@ -1,0 +1,89 @@
+{
+    "VI": {
+        "Menu": {
+            "profile_text_AccountInfo": "Thông Tin Tài Khoản",
+            "account_text_ChangeLanguage": "Ngôn Ngữ",
+            "account_text_Logout": "Đăng Xuất",
+            "bottomTab_text_Account": "Tài Khoản",
+            "bottomTab_text_Notifications": "Thông Báo",
+            "bottomTab_text_Categories": "Danh Mục",
+            "bottomTab_text_Dashboard": "Dashboard"
+        },
+        "Login": {
+            "auth_text_AppName": "Hệ Thống Quản Lý Chiếu Sáng Thông Minh",
+            "login_text_Login": "Đăng Nhập",
+            "login_input_Username-label-inactive": "Tên Tài Khoản",
+            "login_input_Password-label-inactive": "Mật Khẩu",
+            "auth_btn_ChangeLanguage": "Ngôn Ngữ",
+            "login_btn_ForgotPassword": "Quên Mật Khẩu ?",
+            "login_btn_Login": "Đăng Nhập"
+        },
+        "Forgot_Password": {
+            "forgotPsw_text_ForgotPassword": "Quên Mật Khẩu",
+            "forgotPsw_input_Username-label-inactive": "Vui lòng nhập tên tài khoản để xác thực",
+            "forgotPsw_btn_Send": "Gửi",
+            "forgotPsw_btn_Done": "Xong"
+        },
+        "Change_Password": {
+            "changePsw_text_Validation_1": "Độ dài mật khẩu phải từ 10 đến 15 ký tự",
+            "changePsw_text_Validation_2": "Mật khẩu phải bao gồm chữ viết hoa, chữ viết thường, số và ít nhất 1 kí tự đặc biệt. \n@#$%*?&!.-_> </^~` ",
+            "changePsw_text_Validation_3": "Mật khẩu không chứa dấu cách và thông tin tài khoản (tên tài khoản, email đăng ký và tên người dùng).",
+            "changePsw_input_CurrentPassword-label-inactive": "Mật Khẩu Hiện Tại *",
+            "changePsw_input_NewPassword-label-inactive": "Xác Nhận Mật Khẩu *",
+            "changePsw_btn_Save": "Lưu"
+        },
+        "View_Account": {
+            "profile_btn_EditAccountInfo": "Sửa",
+            "profile_text_AccountInformation": "Thông Tin Tài Khoản",
+            "profile_btn_ChangePassword": "Đổi Mật Khẩu",
+            "profile_text_TwoFactor": "Xác Thực 2 Lớp",
+            "profile_input_DisplayName-label-inactive": "Tên Người Dùng",
+            "profile_input_Username-label-inactive": "Tên Tài Khoản",
+            "profile_input_Phone-label-inactive": "Số Điện Thoại",
+            "profile_input_Email-label-inactive": "Email",
+            "profile_input_Status-label-inactive": "Trạng Thái",
+            "profile_text_CreationDate-label-inactive": "Ngày Tạo",
+            "profile_text_UpdateDate-label-inactive": "Ngày Cập Nhật",
+            "profile_input_Role-label-inactive": "Vai Trò",
+            "profile_input_Position-label-inactive": "Chức Vụ",
+            "profile_select_Department-label-inactive": "Phòng Ban",
+            "profile_text_Notifications-label-inactive": "Nhận Thông Báo"
+        },
+        "Edit_Account": {
+            "editProfile_input_DisplayName-label-inactive": "Tên Người Dùng *",
+            "editProfile_input_Phone-label-inactive": "Số Điện Thoại *",
+            "editProfile_input_Email-label-inactive": "Email *",
+            "editProfile_input_Position-label-inactive": "Chức Vụ *",
+            "editProfile_select_Department-label-inactive": "Phòng Ban",
+            "editProfile_select_Notifications-label-inactive": "Nhận Thông Báo",
+            "editProfile_btn_Save": "Lưu"
+        },
+        "TFA": {
+            "tfaModal_text_EnableTwoFactorAuth": "Bật Xác Thực 2 Lớp",
+            "tfa_text_getVerified": "Nhận mã xác thực qua :",
+            "tfa_radio_text_email": "Email",
+            "tfa_radio_text_phone": "Số Điện Thoại",
+            "tfaModal_btn_Continue": "Tiếp Tục",
+            "tfaModal_text_EmailInstruction": "Để hoàn tất quá trình bật xác thực 2 lớp, vui lòng điền mã xác nhận được gửi tới email:",
+            "tfaModal_text_OtpSentNotification": "Đã gửi mã OTP. Vui lòng kiểm tra tin nhắn!",
+            "tfaModal_btn_Verify": "Xác Thực",
+            "tfaModal_text_NotReceiveCode": "Chưa nhận được mã? Gửi Lại"
+        },
+        "Error": {
+            "error_blank_input": "*Vui lòng nhập trường này!",
+            "error_an_error_occurred": "Đã Xảy Ra Lỗi",
+            "error_not_found": "Tài khoản không tồn tại. Vui lòng liên hệ với Quản trị viên!",
+            "editProfile_text_format": "*Sai định dạng cho phép!",
+            "error_phone_exist": "Số điện thoại này đã được đăng ký. Vui lòng chọn một số điện thoại khác!",
+            "error_success": "Thành công",
+            "error_save_success": "Lưu thông tin thành công!",
+            "changePsw_text_CurrentPasswordError": "*Vui lòng nhập trường này!",
+            "changePsw_text_NewPassword": "*Mật khẩu mới trùng với mật khẩu hiện tại!",
+            "changePsw_text_ConfirmPassword": "*Xác nhận mật khẩu không đúng!",
+            "error_currentpass_incorrect": "Mật khẩu hiện tại không chính xác!",
+            "error_disable": "Tài khoản đã bị vô hiệu hóa. Vui lòng liên hệ với Quản trị viên!",
+            "error_password_incorrect": "Sai thông tin đăng nhập. Vui lòng kiểm tra lại thông tin đăng nhập!",
+            "error_changePw_success": "Đổi mật khẩu thành công! Vui lòng sử dụng mật khẩu mới để đăng nhập!"
+        }
+    }
+}

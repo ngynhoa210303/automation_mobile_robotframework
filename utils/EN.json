@@ -1,0 +1,89 @@
+{
+    "EN": {
+        "Menu": {
+            "profile_text_AccountInfo": "Account Information",
+            "account_text_ChangeLanguage": "Language",
+            "account_text_Logout": "Logout",
+            "bottomTab_text_Account": "Account",
+            "bottomTab_text_Notifications": "Notifications",
+            "bottomTab_text_Categories": "Category",
+            "bottomTab_text_Dashboard": "Dashboard"
+        },
+        "Login": {
+            "auth_text_AppName": "Smart Lighting Management System",
+            "login_text_Login": "Login",
+            "login_input_Username-label-inactive": "Username",
+            "login_input_Password-label-inactive": "Password",
+            "auth_btn_ChangeLanguage": "Language",
+            "login_btn_ForgotPassword": "Forgot password ?",
+            "login_btn_Login": "Login"
+        },
+        "Forgot_Password": {
+            "forgotPsw_text_ForgotPassword": "Forgot password",
+            "forgotPsw_input_Username-label-inactive": "Please enter your username to verify",
+            "forgotPsw_btn_Send": "Send",
+            "forgotPsw_btn_Done": "Done"
+        },
+        "Change_Password": {
+            "changePsw_text_Validation_1": "Password length must be of 10 to 15 characters",
+            "changePsw_text_Validation_2": "Password must contain lowercase letters, uppercase letters, numeric digits, and one special character \n@#$%*?&!.-_> </^~` ",
+            "changePsw_text_Validation_3": "Password must not contain spaces and account information(username, email and full name)",
+            "changePsw_input_CurrentPassword-label-inactive": "Current Password *",
+            "changePsw_input_NewPassword-label-inactive": "Confirm Password *",
+            "changePsw_btn_Save": "Save"
+        },
+        "View_Account": {
+            "profile_btn_EditAccountInfo": "Edit",
+            "profile_text_AccountInformation": "Account Information",
+            "profile_btn_ChangePassword": "Change Password",
+            "profile_text_TwoFactor": "Two-Factor Authentication",
+            "profile_input_DisplayName-label-inactive": "Full Name",
+            "profile_input_Username-label-inactive": "Account Name",
+            "profile_input_Phone-label-inactive": "Phone Number",
+            "profile_input_Email-label-inactive": "Email",
+            "profile_input_Status-label-inactive": "Status",
+            "profile_text_CreationDate-label-inactive": "Created At",
+            "profile_text_UpdateDate-label-inactive": "Updated At",
+            "profile_input_Role-label-inactive": "Role",
+            "profile_input_Position-label-inactive": "Position",
+            "profile_select_Department-label-inactive": "Department",
+            "profile_text_Notifications-label-inactive": "Receive Notifications"
+        },
+        "Edit_Account": {
+            "editProfile_input_DisplayName-label-inactive": "Full Name *",
+            "editProfile_input_Phone-label-inactive": "Phone Number *",
+            "editProfile_input_Email-label-inactive": "Email *",
+            "editProfile_input_Position-label-inactive": "Position *",
+            "editProfile_select_Department-label-inactive": "Department",
+            "editProfile_select_Notifications-label-inactive": "Receive Notifications",
+            "editProfile_btn_Save": "Save"
+        },
+        "TFA": {
+            "tfaModal_text_EnableTwoFactorAuth": "Turn on two-factor authentication",
+            "tfa_text_getVerified": "Receive authentication code via :",
+            "tfa_radio_text_email": "Email",
+            "tfa_radio_text_phone": "Phone Number",
+            "tfaModal_btn_Continue": "Continue",
+            "tfaModal_text_EmailInstruction": "To complete the two-factor authentication process, please enter the verification code sent to the email:",
+            "tfaModal_text_OtpSentNotification": "Your OTP code has been sent. Please check your message!",
+            "tfaModal_btn_Verify": "Verify",
+            "tfaModal_text_NotReceiveCode": "Didn't receive the code? Resend code"
+        },
+        "Error": {
+            "error_blank_input": "*Please enter this field!",
+            "error_an_error_occurred": "An error occurred",
+            "error_not_found": "Username is not found. Please contact the Administrator!",
+            "editProfile_text_format": "*Invalid format!",
+            "error_phone_exist": "This phone number is already registered. Please choose a different phone number!",
+            "error_success": "Success",
+            "error_save_success": "Save information successfully!",
+            "changePsw_text_CurrentPasswordError": "*Please enter this field!",
+            "changePsw_text_NewPassword": "*New password is the same as the current password!",
+            "changePsw_text_ConfirmPassword": "*Password does not match!",
+            "error_currentpass_incorrect": "Current password is incorrect. Please try again!",
+            "error_disable": "Your account has been inactive. Please contact the Administrator!",
+            "error_password_incorrect": "Wrong username or password. Please try again!",
+            "error_changePw_success": "Update password successfully! Please use the new password to login!"
+        }
+    }
+}
